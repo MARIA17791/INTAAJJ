@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Al_Kanz';
+    src: url(/DUAT/FONTS/Al_Kanz_Fonts_For_Windows/Al-Kanz\ for\ Windows.ttf) format('truetype');
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    direction: rtl;
+    background: url(/MAIN/PHOTO/bg-design.png);
+    background-color: #08776f;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    font-family: "Al_Kanz", "serif";
+}
+
+.navbar {
+    background-color: #114948;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+}
+
+.container {
+    position: relative;
+    height: 85vh;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow img {
+    height: 100%;
+}
+
+.square-box {
+    position: absolute;
+    top: 15px;
+    /* Align with container top */
+    /* width: 60%; */
+    height: 100%;
+    /* Maintain square aspect ratio */
+    max-width: 800px;
+    /* Max width for larger screens */
+    max-height: 800px;
+    /* Max height for larger screens */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for better visibility */
+    border-radius: 0px 0px 0px 100px;
+    /* Rounded corners */
+    background-size: cover;
+    /* Cover the entire box */
+    display: flex;
+    align-items: center;
+    /* Center the slideshow container */
+    justify-content: center;
+    /* Center the slideshow container */
+}
+
+.duat,
+.hudood {
+    color: #ffcf6e;
+    background-color: #114948;
+    height: 90px;
+    /* Adjusted height */
+    width: 240px;
+    /* Adjusted width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* Increased font size */
+    position: absolute;
+    /* Adjusted position */
+    font-size: x-large;
+}
+
+.duat {
+    left: 195px;
+    top: 250px;
+    /* Positioned from the right edge */
+}
+
+.hudood {
+    left: 195px;
+    top: 380px;
+    /* Positioned from the left edge */
+}
+
+.duat a,
+.hudood a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.8rem;
+    /* Increased font size */
+}
+
+.moti_white {
+    background: url(/MAIN/PHOTO/Moti-White.png);
+    background-repeat: repeat-x;
+    background-size: 30px;
+}

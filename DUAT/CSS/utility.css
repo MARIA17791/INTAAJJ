@@ -1,0 +1,24 @@
+
+.red-border {
+    border: 1px solid red;
+}
+
+.size-s {
+    font-size: small;
+}
+
+.p20 {
+    padding: 0px 20px;
+}
+
+.size-xl {
+    font-size: x-large;
+}
+
+.size-l {
+    font-size: large;
+}
+
+.size-xxl {
+    font-size: xx-large;
+}

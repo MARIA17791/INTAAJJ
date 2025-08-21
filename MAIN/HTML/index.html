@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- ✅ Bootstrap 5 RTL CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+  <!-- ✅ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Custom Font -->
+  <style>
+    @font-face {
+      font-family: 'Al_Kanz';
+      src: url(/DUAT/FONTS/Al_Kanz_Fonts_For_Windows/Al-Kanz\ for\ Windows.ttf) format('truetype');
+    }
+  </style>
+
+  <!-- ✅ Custom CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      direction: rtl;
+      background: url(/MAIN/PHOTO/bg-design.png);
+      background-color: #08776f;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      font-family: "Al_Kanz", serif;
+    }
+
+    .navbar {
+      background-color: #114948;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 70px;
+      max-height: 100%;
+    }
+
+    .container-main {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .moti_white {
+      background: url(/MAIN/PHOTO/Moti-White.png);
+      background-repeat: repeat-x;
+      background-size: 30px;
+      height: 30px;
+    }
+
+    .square-box {
+      max-width: 800px;
+      max-height: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 0 0 0 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .slideshow {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .duat,
+    .hudood {
+      background-color: #114948;
+      color: #ffcf6e;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+
+    .duat:hover,
+    .hudood:hover {
+      background-color: #0d3c3c;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar {
+        height: 70px;
+      }
+
+      .navbar .logo img {
+        height: 55px;
+      }
+
+      .square-box {
+        border-radius: 0 0 0 30px;
+      }
+
+      .duat,
+      .hudood {
+        height: 70px;
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .navbar {
+        height: 60px;
+      }
+
+      .navbar .logo img {
+        height: 50px;
+      }
+
+      .duat,
+      .hudood {
+        height: 60px;
+        font-size: 1.3rem;
+      }
+
+      .square-box {
+        border-radius: 0 0 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="/MAIN/PHOTO/logo1.png" alt="Logo" />
+    </div>
+  </div>
+
+  <!-- ✅ Main Content -->
+  <div class="container container-main">
+
+    <div class="moti_white">&nbsp;</div>
+
+    <!-- ✅ Slideshow Box -->
+    <div class="square-box mt-4">
+      <div class="slideshow">
+        <img src="/MAIN/PHOTO/Slideshow-1.jpg" alt="Slideshow 1" />
+      </div>
+      <div class="slideshow">
+        <img src="/MAIN/PHOTO/Slideshow-2.jpg" alt="Slideshow 2" />
+      </div>
+      <div class="slideshow">
+        <img src="/MAIN/PHOTO/Slideshow-3.jpeg" alt="Slideshow 3" />
+      </div>
+      <div class="slideshow">
+        <img src="/MAIN/PHOTO/Slideshow-4.webp" alt="Slideshow 4" />
+      </div>
+    </div>
+
+    <!-- ✅ Buttons -->
+    <div class="row justify-content-center text-center mt-4 g-3">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+        <a href="/DUAT/HTML/index.html" class="duat w-100">
+          <h2 class="m-0">دعاة مطلقين</h2>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+        <a href="/HUDOOD/HTML/index.html" class="hudood w-100">
+          <h2 class="m-0">حدود كرام</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slideshow");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+</body>
+
+</html>

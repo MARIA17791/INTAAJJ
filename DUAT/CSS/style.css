@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Al_Kanz';
+    src: url(/DUAT/FONTS/Al_Kanz_Fonts_For_Windows/Al-Kanz\ for\ Windows.ttf) format('truetype');
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    direction: rtl;
+    background-image: url(/DUAT/PHOTO/bg-blue.png);
+    background-color: #08776f;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    font-family: "Al_Kanz", "serif";
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    height: 400px;
+    width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Moves the button up */
+    box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+}
+
+.moti-Xborder {
+    background-image: url(/DUAT/PHOTO/design.png);
+    background-repeat: repeat-x;
+    background-size: 25px;
+    display: flex;
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.moti-Yborder {
+    background-image: url(/DUAT/PHOTO/design.png);
+    background-repeat: repeat-x;
+    background-size: 25px;
+    display: flex;
+    width: 100%;
+    transform: scaleY(-1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ 

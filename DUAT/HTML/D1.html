@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+
+        @font-face {
+            font-family: 'Al_Kanz';
+            src: url(/DUAT/FONTS/Al_Kanz_Fonts_For_Windows/Al-Kanz\ for\ Windows.ttf) format('truetype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            background-image: url(/MAIN/PHOTO/bg-design.png);
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-color: #08776f;
+            font-family: "Al_Kanz", "serif";
+        }
+
+        .moti-header {
+            background: url(/DUAT/PHOTO/Moti_Header.png);
+            background-repeat: repeat-x;
+            height: 35px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            width: 60%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-img {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 0 0 100px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .right-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 0 0 100px;
+        }
+
+        .new-card,
+        .text-card {
+            background-color: white;
+            border: 3px solid black;
+            width: 90%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            direction: rtl;
+            padding: 20px 0;
+        }
+
+        .moti-Xborder,
+        .moti-Yborder {
+            background-image: url(/DUAT/PHOTO/design.png);
+            background-repeat: repeat-x;
+            background-size: 25px;
+            width: 100%;
+        }
+
+        .moti-Xborder {
+            transform: scaleX(-1);
+        }
+
+        .moti-Yborder {
+            transform: scaleY(-1);
+        }
+
+        .p20 {
+            padding: 0 20px;
+        }
+
+        .size-xl {
+            font-size: x-large;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content,
+            .right-img {
+                width: 100%;
+            }
+
+            .right-img {
+                height: 200px;
+                border-radius: 0;
+            }
+
+            .right-img img {
+                border-radius: 0;
+                height: 100%;
+            }
+
+            .new-card,
+            .text-card {
+                width: 95%;
+                font-size: large;
+            }
+
+            .size-xl {
+                font-size: large;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moti-header">&nbsp;</div>
+
+    <div class="container">
+        <!-- Text Content (left side on desktop) -->
+        <div class="content">
+            <div class="header size-xl">
+                <h1>سيدنا ذؤيب <sup>رض</sup></h1>
+            </div>
+
+            <div class="new-card size-xl">
+                <h2 class="p20">المشهد:حوث</h2>
+                <div class="moti-Xborder">&nbsp;</div>
+                <p class="p20">
+                    تاريخ الوفاة:١٠ محرم الحرام ٥٤٦هـ<br />
+                    تاريخ الولادة:
+                </p>
+                <div class="moti-Yborder">&nbsp;</div>
+            </div>
+
+            <div class="text-card size-xl">
+                <h2 class="p20">الاخبار</h2>
+                <div class="moti-Xborder">&nbsp;</div>
+                <p class="p20">
+                    اْثثني تواضع ني شان عجب ححهسس،جيم خدا تعالى يه جبل ثثر تجلي نو ارادة كيدو تو سككلا ثثهارٌو اونححا تهيا كه تجلي اهنا ثثر تهائي مككر طور يه خضوع كيدو ،تو تجلي طور ثثر تهئي<br><br>
+                    تيم سككلا يمن نا سلاطين نا درميان سيدنا ذويب <sup>رض</sup> ني تواضع ني شان ظاهر تهئي.
+                </p>
+                <div class="moti-Yborder">&nbsp;</div>
+            </div>
+
+            <div class="text-card size-xl">
+                <h2 class="p20">بيان مبارك -سيدنا محمد برهان الدين <sup>رض</sup></h2>
+                <div class="moti-Xborder">&nbsp;</div>
+                <p class="p20">
+                    "انهار من ماء " سيدنا ذؤيب رض - فراس الكتب ، شه سوار ، سگلا نا ماتها اونچا تهيا كسس ( اطلاق نو رتبة )
+                    همنسس اْپسسس ، سيدنا ذؤيب رض نسس اْپو ، موسى ني مناجاة واسطسس - سگلا پهار يسس كهيو كسس تجلي همارا اوپر تهائي ، طور - ميطط كون .كه كهوں - مارا اوپر تجلي تهائي جسس چهسس تسس تواضع چهسس ، راسخ هتا ، تشمخ نوتو .
+                    جسس مخلص هوئي يسس اخلاص ني صورة اْپي سکسس.
+                </p>
+                <div class="moti-Yborder">&nbsp;</div>
+            </div>
+
+            <div class="text-card size-xl">
+                <h2 class="p20">ميطط يسس سوطط سيكهوطط؟</h2>
+                <div class="moti-Xborder">&nbsp;</div>
+                <p class="p20">
+                    ماري زندككي ما منسس هميشة نمنتائي (تواضع) ساتهسس رهوو جوئيسس انسس كوئي وقت بهي مارا دل ما تكبر نه 'اوي جائي كيم كه رسول الله <sup>صلع</sup> فرماوسس ححهسس كه "من تواضع لله رفعه الله"
+                    جه شخص خدا تعالى واسطسس تواضع كرسسس تو خدا تعالى اهنسس اونححا كرسسس.
+                </p>
+                <div class="moti-Yborder">&nbsp;</div>
+            </div>
+        </div>
+
+        <!-- Image on Right -->
+        <div class="right-img">
+            <img src="/DUAT/PHOTO/Huth.jpg" alt="Yemen Haus" />
+        </div>
+    </div>
+</body>
+
+</html>
