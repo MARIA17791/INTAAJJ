@@ -193,12 +193,16 @@
 
         <h1>AL-AQMAR</h1>
 
-        <form action="/MAIN/HTML/index.html" method="get">
-            <input type="text" name="username" placeholder="Username" required />
-            <input type="password" name="password" placeholder="Password" required />
-            <button type="submit">Login</button>
-          </form>
-          
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="/MAIN/HTML/index.html"><div class="login">Log In</div></a>
+        </form>
+
         <div class="footer">
             <p>Don't have an account? <a href="#">Create one</a></p>
         </div>
